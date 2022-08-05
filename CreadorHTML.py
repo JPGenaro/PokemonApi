@@ -34,29 +34,24 @@ mensaje = f"""
                 <td>{stats['name']}</td>
             </tr>
             <tr>
-                <td>triangle</td>
-                <td>better</td>
+                <td>Tipos</td>
+                <td>{stats['type']}</td>
             </tr>
             <tr>
-                <td>bus</td>
-                <td>distant</td>
+                <td>Altura</td>
+                <td>{stats['height']}</td>
             </tr>
             <tr>
-                <td>piano</td>
-                <td>buffalo</td>
+                <td>Abilidades</td>
+                <td>{stats['abilities']}</td>
             </tr>
+            
             <tr>
-                <td>cross</td>
-                <td>promised</td>
+                <td>Peso</td>
+                <td>{stats['weight']}</td>
             </tr>
-            <tr>
-                <td>quietly</td>
-                <td>regular</td>
-            </tr>
-            <tr>
-                <td>climate</td>
-                <td>worry</td>
-            </tr>
+            
+            
         </table>
     </div>
 </body>
