@@ -2,15 +2,14 @@ import requests
 
 url_api = "https://pokeapi.co/api/v2/pokemon/"
 
-def main():
-    pokemon_name = input('Tirame un nombre, de pokemon obvio: ')
+def main(pokemon_name):
+    
     pokemon_data_url = url_api + pokemon_name
     data = get_pokemon_data(pokemon_data_url)
 
     pokemon_type = [types['type']['name'] for types in data['types']]
 
-    print(data)
-    print(", ".join(pokemon_type))
+    return f"{data}, {pokemon_type}"
 
 def get_pokemon_data(url_pokemon=""):
     pokemon_data= {
@@ -32,5 +31,3 @@ def get_pokemon_data(url_pokemon=""):
 
     return pokemon_data
 
-if __name__ == '__main__':
-    main()
