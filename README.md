@@ -1,2 +1,1 @@
-# PokemonApi
-Un API de pokemon
+API Empleada: PokemonApi (https://pokeapi.co/)
