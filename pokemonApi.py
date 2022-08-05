@@ -9,7 +9,7 @@ def main(pokemon_name):
 
     pokemon_type = [types['type']['name'] for types in data['types']]
 
-    return f"{data}, {pokemon_type}"
+    return {**data, **{'types': pokemon_type}}
 
 def get_pokemon_data(url_pokemon=""):
     pokemon_data= {
